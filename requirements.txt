@@ -1,0 +1,24 @@
+# requirements.txt for sam3_base_pc59_nollm.py
+#
+# NOT included here (install separately -- see setup commands in the script's docstring
+# or the message accompanying this file):
+#   - torch, torchvision   -> must match this VM's CUDA build, install with the right --index-url
+#   - sam3                 -> must be installed with --no-deps, or it may override the torch
+#                              build you just installed
+#
+# Usage:
+#   pip install -r requirements.txt
+
+
+torch
+torchvision
+
+numpy>=1.26,<2
+
+iopath>=0.1.10
+ftfy==6.1.1
+pandas
+matplotlib
+pillow
+tqdm
+portalocker

@@ -27,3 +27,17 @@ download weight_sam3 tại:
 ```
 https://drive.google.com/file/d/1FiUmJKX-CFvkKdcKecsdwikGJ2kVO7Eu/view?usp=sharing
 ```
+
+## 2. Cài đặt môi trường
+
+Cài đặt SAM3 trực tiếp từ repository chính thức:
+
+```bash
+pip install "git+https://github.com/facebookresearch/sam3.git"
+```
+
+Sau đó cài đặt các thư viện cần thiết khác:
+
+```
+pip install -r requirements.txt
+```
