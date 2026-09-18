@@ -9,7 +9,7 @@ Tải toàn bộ thư mục này từ Google Drive về máy. Hãy đảm bảo 
 ```text
 sam3_base_pc59_nollm/
 ├── sam3_base_pc59_nollm.py         
-├── data_pc59/
+├── data_voc2010/
 │   ├── JPEGImages/                    
 │   ├── SegmentationClassContext/      
 │   ├── 59_labels.txt                  
