@@ -269,16 +269,32 @@ def build_model():
     print(f"Model loaded. Confidence threshold: {CONFIDENCE_THRESHOLD}")
 
 
+# Hardcoded alphabetical order -- matches prepare_pc59_mat_to_png.py's LUT exactly (the
+# actual convention SegmentationClassContext/ masks use), verified against mmsegmentation's
+# PascalContextDataset59.CLASSES. Deliberately NOT derived from 59_labels.txt's own index
+# order, which does not necessarily match this alphabetical order -- using it caused silent
+# per-class index mismatches (some classes correct, some near-0 IoU) even though predictions
+# were visually correct.
+_PC59_CLASSES_ALPHABETICAL = [
+    "aeroplane", "bag", "bed", "bedclothes", "bench", "bicycle", "bird", "boat", "book",
+    "bottle", "building", "bus", "cabinet", "car", "cat", "ceiling", "chair", "cloth",
+    "computer", "cow", "cup", "curtain", "dog", "door", "fence", "floor", "flower", "food",
+    "grass", "ground", "horse", "keyboard", "light", "motorbike", "mountain", "mouse",
+    "person", "plate", "platform", "pottedplant", "road", "rock", "sheep", "shelves",
+    "sidewalk", "sign", "sky", "snow", "sofa", "table", "track", "train", "tree", "truck",
+    "tvmonitor", "wall", "water", "window", "wood",
+]
+
+
 def load_classes_and_split():
     global PC59_CLASSES, NUM_CLASSES, INDEX_TO_CLASS
 
-    id_to_name = parse_pc59_labels(LABELS_TXT_PATH)
-    PC59_CLASSES = [id_to_name[i] for i in sorted(id_to_name)]
+    PC59_CLASSES = list(_PC59_CLASSES_ALPHABETICAL)
     NUM_CLASSES = len(PC59_CLASSES)
-    assert NUM_CLASSES == 59, f"expected 59 classes, parsed {NUM_CLASSES} from {LABELS_TXT_PATH}"
+    assert NUM_CLASSES == 59, f"expected 59 classes, got {NUM_CLASSES}"
     INDEX_TO_CLASS = {i: name for i, name in enumerate(PC59_CLASSES)}
 
-    print(f"Parsed {NUM_CLASSES} classes from {LABELS_TXT_PATH.name}:")
+    print(f"Using {NUM_CLASSES} hardcoded alphabetical classes (NOT read from {LABELS_TXT_PATH.name}):")
     for i in list(range(5)) + list(range(54, 59)):
         print(f"  {i}: {PC59_CLASSES[i]}")
 
