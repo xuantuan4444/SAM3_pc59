@@ -177,10 +177,6 @@ pip install iopath ftfy portalocker
 pip install pandas numpy matplotlib pillow tqdm opencv-python-headless
 pip install "albumentations>=2.0" scipy      # các file train (boundary loss)
 pip install kneed scikit-learn                # select_refinement_classes.py
-
-# Chỉ cần cho nhánh LLM (generate_adjust_prompt_pc59.py):
-pip install google-genai pydantic python-dotenv
-export GEMINI_API_KEY="..."        # hoặc đặt trong file .env
 ```
 
 DINOv2 (ViT-S/14) tự tải qua `torch.hub` ngay lần đầu chạy 1 trong các file `+DINOv2`
