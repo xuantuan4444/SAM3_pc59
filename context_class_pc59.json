@@ -1,0 +1,243 @@
+{
+  "shelves": {
+    "definition": "Flat horizontal surfaces used for storage or display, typically attached to a wall or forming part of a piece of furniture.",
+    "anchor_prompts": ["shelves", "shelf"],
+    "positive": ["bookshelf", "rack", "display shelf", "storage shelving"],
+    "negative": ["cabinet", "table", "countertop", "floor"],
+    "confusable_classes": ["cabinet", "table"],
+    "generation_notes": "Decomposing 'shelves' into functional nouns (bookshelf, rack) helps capture variations, but the anchor 'shelves' is essential to avoid missing bare wall-mounted planks."
+  },
+  "wood": {
+    "definition": "Solid material derived from trees, usually referring to structural or background wooden elements not categorized under specific furniture.",
+    "anchor_prompts": ["wood"],
+    "positive": ["timber", "plank", "wooden board", "lumber"],
+    "negative": ["metal", "plastic", "stone", "concrete", "tree", "forest"],
+    "confusable_classes": ["floor", "wall", "cabinet"]
+  },
+  "bedclothes": {
+    "definition": "Fabric coverings used on a bed for warmth and hygiene.",
+    "anchor_prompts": ["bedclothes"],
+    "positive": ["blanket", "bedspread", "quilt", "duvet", "sheets"],
+    "negative": ["bed", "mattress", "pillow", "cloth", "curtain"],
+    "confusable_classes": ["bed", "cloth"],
+    "generation_notes": "Empirically validated: The term 'bedclothes' is somewhat archaic; expanding positive prompts to 'blanket', 'quilt', and 'duvet' significantly improves segmentation performance on bedding items."
+  },
+  "sidewalk": {
+    "definition": "Part of ground designated for pedestrians or cyclists. Delimited from the road by some obstacle, e.g. curbs or poles (might be small), not only by markings. Often elevated compared to the road.",
+    "anchor_prompts": ["sidewalk"],
+    "positive": ["paved pedestrian path", "footway", "walkway", "traffic island walkable part", "pedestrian zone", "curb"],
+    "negative": ["road", "driving lane", "terrain", "grass", "street"],
+    "confusable_classes": ["road", "terrain"],
+    "generation_notes": "Keep 'sidewalk' as the anchor and add at most one additional prompt. Never add 'curb' as a standalone prompt."
+  },
+  "computer": {
+    "definition": "Electronic device for processing data, typically referring to desktops, mainframes, or visible PC cases.",
+    "anchor_prompts": ["computer"],
+    "positive": ["desktop computer", "pc case", "workstation"],
+    "negative": ["laptop", "monitor", "mouse", "keyboard", "tv", "smartphone"],
+    "confusable_classes": ["monitor", "laptop"]
+  },
+  "bed": {
+    "definition": "A piece of furniture for sleep or rest, including the frame and mattress.",
+    "anchor_prompts": ["bed"],
+    "positive": ["double bed", "single bed", "bunk bed", "bed frame", "mattress"],
+    "negative": ["sofa", "bedclothes", "pillow", "bench"],
+    "confusable_classes": ["sofa", "bedclothes"]
+  },
+  "ground": {
+    "definition": "The solid surface of the earth outdoors, usually natural terrain as opposed to paved roads.",
+    "anchor_prompts": ["ground"],
+    "positive": ["dirt", "soil", "bare earth", "land", "gravel ground"],
+    "negative": ["road", "floor", "sidewalk", "grass", "mountain", "rock"],
+    "confusable_classes": ["road", "sidewalk", "floor"]
+  },
+  "building": {
+    "definition": "A structure with a roof and walls, such as a house, school, store, or factory.",
+    "anchor_prompts": ["building"],
+    "positive": ["house", "skyscraper", "apartment building", "office building", "shed"],
+    "negative": ["wall", "fence", "tent", "bridge"],
+    "confusable_classes": ["wall", "fence"]
+  },
+  "cloth": {
+    "definition": "Generic fabric or textile material not specifically forming clothing, bedclothes, or curtains.",
+    "anchor_prompts": ["cloth"],
+    "positive": ["fabric", "textile", "rag", "towel", "tablecloth"],
+    "negative": ["clothing", "bedclothes", "curtain", "bag"],
+    "confusable_classes": ["bedclothes", "curtain"]
+  },
+  "truck": {
+    "definition": "A large, heavy motor vehicle used for transporting goods, materials, or troops.",
+    "anchor_prompts": ["truck"],
+    "positive": ["pickup truck", "lorry", "delivery truck", "trailer truck"],
+    "negative": ["car", "bus", "van", "train"],
+    "confusable_classes": ["bus", "car"]
+  },
+  "flower": {
+    "definition": "The seed-bearing part of a plant, consisting of reproductive organs, typically surrounded by brightly colored petals.",
+    "anchor_prompts": ["flower"],
+    "positive": ["blossom", "bloom", "cut flower", "floral arrangement"],
+    "negative": ["pottedplant", "grass", "tree", "vegetation"],
+    "confusable_classes": ["pottedplant"]
+  },
+  "mouse": {
+    "definition": "A hand-operated electronic device that controls the coordinates of a cursor on your computer screen.",
+    "anchor_prompts": ["computer mouse", "mouse"],
+    "positive": ["optical mouse", "wireless mouse"],
+    "negative": ["animal mouse", "keyboard", "computer", "rodent"],
+    "confusable_classes": ["computer"]
+  },
+  "platform": {
+    "definition": "A raised level surface on which people or things can stand, typically at a railway station.",
+    "anchor_prompts": ["platform"],
+    "positive": ["train platform", "station platform", "raised stage"],
+    "negative": ["track", "train", "sidewalk", "floor"],
+    "confusable_classes": ["sidewalk", "floor", "track"]
+  },
+  "door": {
+    "definition": "A hinged, sliding, or revolving barrier at the entrance to a building, room, or vehicle.",
+    "anchor_prompts": ["door"],
+    "positive": ["wooden door", "glass door", "doorway", "entrance door"],
+    "negative": ["window", "wall", "cabinet door", "gate"],
+    "confusable_classes": ["window", "wall", "cabinet"]
+  },
+  "window": {
+    "definition": "An opening in the wall or roof of a building or vehicle that is fitted with glass to admit light or air.",
+    "anchor_prompts": ["window"],
+    "positive": ["glass window", "windowpane", "casement window"],
+    "negative": ["door", "mirror", "curtain", "wall"],
+    "confusable_classes": ["door", "mirror", "wall"]
+  },
+  "bench": {
+    "definition": "A long seat for several people, typically made of wood or stone.",
+    "anchor_prompts": ["bench"],
+    "positive": ["park bench", "wooden bench", "pew", "seating bench"],
+    "negative": ["chair", "sofa", "table", "stool"],
+    "confusable_classes": ["chair", "sofa", "table"]
+  },
+  "bag": {
+    "definition": "A flexible container with an opening at the top, used for carrying things.",
+    "anchor_prompts": ["bag"],
+    "positive": ["backpack", "handbag", "purse", "tote bag", "luggage"],
+    "negative": ["box", "cloth", "person"],
+    "confusable_classes": ["cloth"]
+  },
+  "fence": {
+    "definition": "A barrier, railing, or other upright structure enclosing an area of ground.",
+    "anchor_prompts": ["fence"],
+    "positive": ["picket fence", "chain-link fence", "wooden fence", "railing"],
+    "negative": ["wall", "building", "gate", "hedge"],
+    "confusable_classes": ["wall", "gate"]
+  },
+  "cabinet": {
+    "definition": "A piece of furniture with shelves or drawers for storing or displaying items.",
+    "anchor_prompts": ["cabinet"],
+    "positive": ["cupboard", "wardrobe", "dresser", "storage cabinet", "locker"],
+    "negative": ["shelves", "table", "chest", "door"],
+    "confusable_classes": ["shelves", "door"]
+  },
+  "road": {
+    "definition": "A wide way leading from one place to another, typically paved, for vehicles.",
+    "anchor_prompts": ["road"],
+    "positive": ["street", "highway", "asphalt road", "driving lane", "avenue"],
+    "negative": ["sidewalk", "track", "ground", "terrain", "parking lot"],
+    "confusable_classes": ["sidewalk", "ground", "track"]
+  },
+  "floor": {
+    "definition": "The lower surface of a room, on which one may walk.",
+    "anchor_prompts": ["floor"],
+    "positive": ["wooden floor", "tiled floor", "carpeted floor", "indoor flooring"],
+    "negative": ["ground", "ceiling", "road", "sidewalk", "rug"],
+    "confusable_classes": ["ground", "rug", "ceiling"]
+  },
+  "light": {
+    "definition": "A source of illumination, including light fixtures and lamps.",
+    "anchor_prompts": ["light", "light fixture"],
+    "positive": ["lamp", "street lamp", "chandelier", "ceiling light", "lantern"],
+    "negative": ["ceiling", "window", "sun", "sign"],
+    "confusable_classes": ["ceiling", "sign"]
+  },
+  "track": {
+    "definition": "A continuous line of rails on a railway.",
+    "anchor_prompts": ["track"],
+    "positive": ["railway track", "railroad tracks", "train rails", "tram tracks"],
+    "negative": ["road", "platform", "ground", "train"],
+    "confusable_classes": ["road", "platform"]
+  },
+  "sign": {
+    "definition": "An object whose primary purpose is to display information or instructions.",
+    "anchor_prompts": ["sign"],
+    "positive": ["traffic sign", "billboard", "street sign", "signboard", "information board"],
+    "negative": ["light", "building", "window", "pole"],
+    "confusable_classes": ["light"]
+  },
+  "ceiling": {
+    "definition": "The upper interior surface of a room or other similar compartment.",
+    "anchor_prompts": ["ceiling"],
+    "positive": ["indoor ceiling", "roof interior"],
+    "negative": ["floor", "wall", "light", "sky", "roof exterior"],
+    "confusable_classes": ["wall", "floor"]
+  },
+  "wall": {
+    "definition": "A continuous vertical brick or stone structure that encloses or divides an area of land or a room.",
+    "anchor_prompts": ["wall"],
+    "positive": ["brick wall", "interior wall", "exterior wall", "concrete wall", "partition"],
+    "negative": ["building", "fence", "door", "window", "ceiling"],
+    "confusable_classes": ["building", "fence"]
+  },
+  "rock": {
+    "definition": "A solid mass of geological materials. Includes boulders and large stones.",
+    "anchor_prompts": ["rock"],
+    "positive": ["boulder", "stone", "large rock", "bedrock"],
+    "negative": ["mountain", "ground", "wall", "concrete"],
+    "confusable_classes": ["mountain", "ground"]
+  },
+  "pottedplant": {
+    "definition": "A plant grown in a container rather than in the ground.",
+    "anchor_prompts": ["pottedplant"],
+    "positive": ["houseplant", "plant in a pot", "indoor plant"],
+    "negative": ["flower", "tree", "vegetation", "vase", "ground"],
+    "confusable_classes": ["flower", "vegetation"]
+  },
+  "chair": {
+    "definition": "A separate seat for one person, typically with a back and four legs.",
+    "anchor_prompts": ["chair"],
+    "positive": ["office chair", "dining chair", "seat", "stool"],
+    "negative": ["sofa", "bench", "table", "bed"],
+    "confusable_classes": ["sofa", "bench"]
+  },
+  "mountain": {
+    "definition": "A large natural elevation of the earth's surface rising abruptly from the surrounding level.",
+    "anchor_prompts": ["mountain"],
+    "positive": ["peak", "hill", "mountain range", "snowy mountain"],
+    "negative": ["rock", "ground", "sky", "terrain"],
+    "confusable_classes": ["rock", "ground"]
+  },
+  "curtain": {
+    "definition": "A piece of material suspended at the top to form a covering or screen, typically at a window.",
+    "anchor_prompts": ["curtain"],
+    "positive": ["window curtain", "drapes", "blind", "fabric screen"],
+    "negative": ["cloth", "window", "wall", "bedclothes"],
+    "confusable_classes": ["cloth", "window"]
+  },
+  "book": {
+    "definition": "A written or printed work consisting of pages glued or sewn together along one side and bound in covers.",
+    "anchor_prompts": ["book"],
+    "positive": ["novel", "textbook", "magazine", "notebook", "stack of books"],
+    "negative": ["paper", "box", "shelves", "table"],
+    "confusable_classes": ["paper"]
+  },
+  "table": {
+    "definition": "A piece of furniture with a flat top and one or more legs, providing a level surface on which objects may be placed.",
+    "anchor_prompts": ["table"],
+    "positive": ["dining table", "coffee table", "worktable"],
+    "negative": ["chair", "cabinet", "shelves", "bench", "floor"],
+    "confusable_classes": ["cabinet", "bench"]
+  },
+  "sofa": {
+    "definition": "A long upholstered seat with a back and arms, for two or more people.",
+    "anchor_prompts": ["sofa"],
+    "positive": ["couch", "loveseat", "settee", "upholstered bench"],
+    "negative": ["chair", "bed", "bench", "pillow"],
+    "confusable_classes": ["chair", "bed", "bench"]
+  }
+}

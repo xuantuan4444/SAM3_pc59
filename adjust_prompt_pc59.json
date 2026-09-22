@@ -1,0 +1,171 @@
+{
+  "shelves": [
+    "shelves",
+    "shelf",
+    "bookshelf",
+    "rack"
+  ],
+  "wood": [
+    "wood",
+    "timber",
+    "plank"
+  ],
+  "bedclothes": [
+    "bedclothes",
+    "blanket",
+    "quilt",
+    "duvet"
+  ],
+  "sidewalk": [
+    "sidewalk",
+    "footway"
+  ],
+  "computer": [
+    "computer",
+    "desktop computer",
+    "pc case"
+  ],
+  "bed": [
+    "bed",
+    "bed frame",
+    "mattress"
+  ],
+  "ground": [
+    "ground",
+    "dirt",
+    "soil"
+  ],
+  "building": [
+    "building",
+    "house",
+    "skyscraper"
+  ],
+  "cloth": [
+    "cloth",
+    "fabric",
+    "towel"
+  ],
+  "truck": [
+    "truck",
+    "pickup truck",
+    "lorry"
+  ],
+  "flower": [
+    "flower",
+    "blossom",
+    "bloom"
+  ],
+  "mouse": [
+    "computer mouse",
+    "mouse",
+    "optical mouse"
+  ],
+  "platform": [
+    "platform",
+    "train platform"
+  ],
+  "door": [
+    "door",
+    "doorway",
+    "entrance door"
+  ],
+  "window": [
+    "window",
+    "glass window",
+    "windowpane"
+  ],
+  "bench": [
+    "bench",
+    "park bench",
+    "seating bench"
+  ],
+  "bag": [
+    "bag",
+    "backpack",
+    "handbag"
+  ],
+  "fence": [
+    "fence",
+    "picket fence",
+    "railing"
+  ],
+  "cabinet": [
+    "cabinet",
+    "cupboard",
+    "wardrobe"
+  ],
+  "road": [
+    "road",
+    "street",
+    "highway"
+  ],
+  "floor": [
+    "floor",
+    "wooden floor",
+    "tiled floor"
+  ],
+  "light": [
+    "light",
+    "light fixture",
+    "lamp"
+  ],
+  "track": [
+    "track",
+    "railway track",
+    "train rails"
+  ],
+  "sign": [
+    "sign",
+    "traffic sign",
+    "billboard"
+  ],
+  "ceiling": [
+    "ceiling",
+    "indoor ceiling"
+  ],
+  "wall": [
+    "wall",
+    "brick wall",
+    "interior wall"
+  ],
+  "rock": [
+    "rock",
+    "boulder",
+    "stone"
+  ],
+  "pottedplant": [
+    "pottedplant",
+    "houseplant",
+    "indoor plant"
+  ],
+  "chair": [
+    "chair",
+    "office chair",
+    "dining chair"
+  ],
+  "mountain": [
+    "mountain",
+    "peak",
+    "hill"
+  ],
+  "curtain": [
+    "curtain",
+    "window curtain",
+    "drapes"
+  ],
+  "book": [
+    "book",
+    "novel",
+    "textbook"
+  ],
+  "table": [
+    "table",
+    "dining table",
+    "coffee table"
+  ],
+  "sofa": [
+    "sofa",
+    "couch",
+    "loveseat"
+  ]
+}

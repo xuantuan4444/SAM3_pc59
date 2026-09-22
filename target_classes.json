@@ -1,0 +1,526 @@
+{
+  "method": "auto",
+  "alpha": 0.5,
+  "beta": 0.5,
+  "bic": {
+    "bic_1_component": -50.009503539564065,
+    "bic_2_component": -56.35279249793224,
+    "delta_bic": 6.343288958368177,
+    "evidence_strength": "strong"
+  },
+  "method_used": "gmm",
+  "bic_threshold": 2.0,
+  "gmm_high_component": 0,
+  "num_total_classes": 59,
+  "num_selected": 34,
+  "target_classes": [
+    "shelves",
+    "wood",
+    "bedclothes",
+    "sidewalk",
+    "computer",
+    "bed",
+    "ground",
+    "building",
+    "cloth",
+    "truck",
+    "flower",
+    "mouse",
+    "platform",
+    "door",
+    "window",
+    "bench",
+    "bag",
+    "fence",
+    "cabinet",
+    "road",
+    "floor",
+    "light",
+    "track",
+    "sign",
+    "ceiling",
+    "wall",
+    "rock",
+    "pottedplant",
+    "chair",
+    "mountain",
+    "curtain",
+    "book",
+    "table",
+    "sofa"
+  ],
+  "full_ranking": [
+    {
+      "class": "shelves",
+      "iou": 0.070686,
+      "deficit_norm": 1.0,
+      "error_contribution": 0.009376,
+      "priority": 0.504688,
+      "selected": true
+    },
+    {
+      "class": "wood",
+      "iou": 0.160482,
+      "deficit_norm": 0.903374,
+      "error_contribution": 0.053825,
+      "priority": 0.478599,
+      "selected": true
+    },
+    {
+      "class": "bedclothes",
+      "iou": 0.141838,
+      "deficit_norm": 0.923436,
+      "error_contribution": 0.027141,
+      "priority": 0.475288,
+      "selected": true
+    },
+    {
+      "class": "sidewalk",
+      "iou": 0.164996,
+      "deficit_norm": 0.898516,
+      "error_contribution": 0.043189,
+      "priority": 0.470852,
+      "selected": true
+    },
+    {
+      "class": "computer",
+      "iou": 0.183029,
+      "deficit_norm": 0.879112,
+      "error_contribution": 0.002366,
+      "priority": 0.440739,
+      "selected": true
+    },
+    {
+      "class": "bed",
+      "iou": 0.226288,
+      "deficit_norm": 0.832563,
+      "error_contribution": 0.020703,
+      "priority": 0.426633,
+      "selected": true
+    },
+    {
+      "class": "ground",
+      "iou": 0.364194,
+      "deficit_norm": 0.684167,
+      "error_contribution": 0.131381,
+      "priority": 0.407774,
+      "selected": true
+    },
+    {
+      "class": "building",
+      "iou": 0.357643,
+      "deficit_norm": 0.691216,
+      "error_contribution": 0.112856,
+      "priority": 0.402036,
+      "selected": true
+    },
+    {
+      "class": "cloth",
+      "iou": 0.307417,
+      "deficit_norm": 0.745263,
+      "error_contribution": 0.0264,
+      "priority": 0.385831,
+      "selected": true
+    },
+    {
+      "class": "truck",
+      "iou": 0.287629,
+      "deficit_norm": 0.766555,
+      "error_contribution": 0.00418,
+      "priority": 0.385368,
+      "selected": true
+    },
+    {
+      "class": "flower",
+      "iou": 0.298152,
+      "deficit_norm": 0.755232,
+      "error_contribution": 0.004096,
+      "priority": 0.379664,
+      "selected": true
+    },
+    {
+      "class": "mouse",
+      "iou": 0.300547,
+      "deficit_norm": 0.752655,
+      "error_contribution": 0.000308,
+      "priority": 0.376482,
+      "selected": true
+    },
+    {
+      "class": "platform",
+      "iou": 0.376754,
+      "deficit_norm": 0.670652,
+      "error_contribution": 0.00927,
+      "priority": 0.339961,
+      "selected": true
+    },
+    {
+      "class": "door",
+      "iou": 0.383254,
+      "deficit_norm": 0.663657,
+      "error_contribution": 0.013066,
+      "priority": 0.338362,
+      "selected": true
+    },
+    {
+      "class": "window",
+      "iou": 0.412103,
+      "deficit_norm": 0.632614,
+      "error_contribution": 0.024434,
+      "priority": 0.328524,
+      "selected": true
+    },
+    {
+      "class": "bench",
+      "iou": 0.429553,
+      "deficit_norm": 0.613837,
+      "error_contribution": 0.002515,
+      "priority": 0.308176,
+      "selected": true
+    },
+    {
+      "class": "bag",
+      "iou": 0.443233,
+      "deficit_norm": 0.599116,
+      "error_contribution": 0.003193,
+      "priority": 0.301155,
+      "selected": true
+    },
+    {
+      "class": "fence",
+      "iou": 0.467961,
+      "deficit_norm": 0.572508,
+      "error_contribution": 0.025457,
+      "priority": 0.298982,
+      "selected": true
+    },
+    {
+      "class": "cabinet",
+      "iou": 0.472712,
+      "deficit_norm": 0.567395,
+      "error_contribution": 0.019794,
+      "priority": 0.293594,
+      "selected": true
+    },
+    {
+      "class": "road",
+      "iou": 0.516601,
+      "deficit_norm": 0.520168,
+      "error_contribution": 0.058603,
+      "priority": 0.289385,
+      "selected": true
+    },
+    {
+      "class": "floor",
+      "iou": 0.508529,
+      "deficit_norm": 0.528854,
+      "error_contribution": 0.046127,
+      "priority": 0.287491,
+      "selected": true
+    },
+    {
+      "class": "light",
+      "iou": 0.480794,
+      "deficit_norm": 0.558698,
+      "error_contribution": 0.003248,
+      "priority": 0.280973,
+      "selected": true
+    },
+    {
+      "class": "track",
+      "iou": 0.5011,
+      "deficit_norm": 0.536847,
+      "error_contribution": 0.006966,
+      "priority": 0.271906,
+      "selected": true
+    },
+    {
+      "class": "sign",
+      "iou": 0.512029,
+      "deficit_norm": 0.525087,
+      "error_contribution": 0.004078,
+      "priority": 0.264583,
+      "selected": true
+    },
+    {
+      "class": "ceiling",
+      "iou": 0.554999,
+      "deficit_norm": 0.478848,
+      "error_contribution": 0.014217,
+      "priority": 0.246533,
+      "selected": true
+    },
+    {
+      "class": "wall",
+      "iou": 0.6445,
+      "deficit_norm": 0.382541,
+      "error_contribution": 0.092049,
+      "priority": 0.237295,
+      "selected": true
+    },
+    {
+      "class": "rock",
+      "iou": 0.607855,
+      "deficit_norm": 0.421972,
+      "error_contribution": 0.006845,
+      "priority": 0.214409,
+      "selected": true
+    },
+    {
+      "class": "pottedplant",
+      "iou": 0.616899,
+      "deficit_norm": 0.412241,
+      "error_contribution": 0.007955,
+      "priority": 0.210098,
+      "selected": true
+    },
+    {
+      "class": "chair",
+      "iou": 0.642304,
+      "deficit_norm": 0.384904,
+      "error_contribution": 0.020622,
+      "priority": 0.202763,
+      "selected": true
+    },
+    {
+      "class": "mountain",
+      "iou": 0.643741,
+      "deficit_norm": 0.383357,
+      "error_contribution": 0.008282,
+      "priority": 0.195819,
+      "selected": true
+    },
+    {
+      "class": "curtain",
+      "iou": 0.646222,
+      "deficit_norm": 0.380688,
+      "error_contribution": 0.005923,
+      "priority": 0.193305,
+      "selected": true
+    },
+    {
+      "class": "book",
+      "iou": 0.688127,
+      "deficit_norm": 0.335595,
+      "error_contribution": 0.001446,
+      "priority": 0.16852,
+      "selected": true
+    },
+    {
+      "class": "table",
+      "iou": 0.724683,
+      "deficit_norm": 0.296259,
+      "error_contribution": 0.013863,
+      "priority": 0.155061,
+      "selected": true
+    },
+    {
+      "class": "sofa",
+      "iou": 0.743525,
+      "deficit_norm": 0.275983,
+      "error_contribution": 0.018788,
+      "priority": 0.147386,
+      "selected": true
+    },
+    {
+      "class": "snow",
+      "iou": 0.750587,
+      "deficit_norm": 0.268384,
+      "error_contribution": 0.005216,
+      "priority": 0.1368,
+      "selected": false
+    },
+    {
+      "class": "cup",
+      "iou": 0.765471,
+      "deficit_norm": 0.252368,
+      "error_contribution": 0.000824,
+      "priority": 0.126596,
+      "selected": false
+    },
+    {
+      "class": "tvmonitor",
+      "iou": 0.774567,
+      "deficit_norm": 0.24258,
+      "error_contribution": 0.005392,
+      "priority": 0.123986,
+      "selected": false
+    },
+    {
+      "class": "tree",
+      "iou": 0.800157,
+      "deficit_norm": 0.215044,
+      "error_contribution": 0.032388,
+      "priority": 0.123716,
+      "selected": false
+    },
+    {
+      "class": "plate",
+      "iou": 0.774093,
+      "deficit_norm": 0.24309,
+      "error_contribution": 0.001024,
+      "priority": 0.122057,
+      "selected": false
+    },
+    {
+      "class": "grass",
+      "iou": 0.827635,
+      "deficit_norm": 0.185475,
+      "error_contribution": 0.036426,
+      "priority": 0.110951,
+      "selected": false
+    },
+    {
+      "class": "food",
+      "iou": 0.794835,
+      "deficit_norm": 0.22077,
+      "error_contribution": 0.001032,
+      "priority": 0.110901,
+      "selected": false
+    },
+    {
+      "class": "car",
+      "iou": 0.859693,
+      "deficit_norm": 0.150979,
+      "error_contribution": 0.010764,
+      "priority": 0.080871,
+      "selected": false
+    },
+    {
+      "class": "boat",
+      "iou": 0.85505,
+      "deficit_norm": 0.155975,
+      "error_contribution": 0.003431,
+      "priority": 0.079703,
+      "selected": false
+    },
+    {
+      "class": "bicycle",
+      "iou": 0.892858,
+      "deficit_norm": 0.115292,
+      "error_contribution": 0.002743,
+      "priority": 0.059017,
+      "selected": false
+    },
+    {
+      "class": "aeroplane",
+      "iou": 0.903671,
+      "deficit_norm": 0.103656,
+      "error_contribution": 0.003185,
+      "priority": 0.05342,
+      "selected": false
+    },
+    {
+      "class": "bus",
+      "iou": 0.908723,
+      "deficit_norm": 0.09822,
+      "error_contribution": 0.004067,
+      "priority": 0.051143,
+      "selected": false
+    },
+    {
+      "class": "person",
+      "iou": 0.933279,
+      "deficit_norm": 0.071796,
+      "error_contribution": 0.01852,
+      "priority": 0.045158,
+      "selected": false
+    },
+    {
+      "class": "motorbike",
+      "iou": 0.919535,
+      "deficit_norm": 0.086585,
+      "error_contribution": 0.002967,
+      "priority": 0.044776,
+      "selected": false
+    },
+    {
+      "class": "train",
+      "iou": 0.921521,
+      "deficit_norm": 0.084448,
+      "error_contribution": 0.003295,
+      "priority": 0.043872,
+      "selected": false
+    },
+    {
+      "class": "bottle",
+      "iou": 0.923873,
+      "deficit_norm": 0.081918,
+      "error_contribution": 0.001596,
+      "priority": 0.041757,
+      "selected": false
+    },
+    {
+      "class": "water",
+      "iou": 0.936705,
+      "deficit_norm": 0.068109,
+      "error_contribution": 0.006093,
+      "priority": 0.037101,
+      "selected": false
+    },
+    {
+      "class": "keyboard",
+      "iou": 0.940797,
+      "deficit_norm": 0.063706,
+      "error_contribution": 0.000116,
+      "priority": 0.031911,
+      "selected": false
+    },
+    {
+      "class": "horse",
+      "iou": 0.947871,
+      "deficit_norm": 0.056094,
+      "error_contribution": 0.001614,
+      "priority": 0.028854,
+      "selected": false
+    },
+    {
+      "class": "cow",
+      "iou": 0.948875,
+      "deficit_norm": 0.055014,
+      "error_contribution": 0.000994,
+      "priority": 0.028004,
+      "selected": false
+    },
+    {
+      "class": "dog",
+      "iou": 0.962137,
+      "deficit_norm": 0.040743,
+      "error_contribution": 0.003844,
+      "priority": 0.022294,
+      "selected": false
+    },
+    {
+      "class": "sheep",
+      "iou": 0.961309,
+      "deficit_norm": 0.041634,
+      "error_contribution": 0.000818,
+      "priority": 0.021226,
+      "selected": false
+    },
+    {
+      "class": "sky",
+      "iou": 0.969898,
+      "deficit_norm": 0.032392,
+      "error_contribution": 0.008418,
+      "priority": 0.020405,
+      "selected": false
+    },
+    {
+      "class": "bird",
+      "iou": 0.963749,
+      "deficit_norm": 0.039008,
+      "error_contribution": 0.000915,
+      "priority": 0.019961,
+      "selected": false
+    },
+    {
+      "class": "cat",
+      "iou": 0.983519,
+      "deficit_norm": 0.017735,
+      "error_contribution": 0.001758,
+      "priority": 0.009746,
+      "selected": false
+    }
+  ]
+}
